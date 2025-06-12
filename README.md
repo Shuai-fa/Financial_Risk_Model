@@ -15,7 +15,10 @@ This project serves as a comprehensive portfolio piece demonstrating a full data
 - **Core Libraries:** Pandas, NumPy, Scikit-learn, XGBoost, Matplotlib, Seaborn, Joblib
 
 ## 3. Project Structure
+
 The repository is organized as follows to ensure clarity and reproducibility:
+
+```text
 Financial_Risk_Model/
 ├── data/
 │   └── sample_data.csv         # Anonymized sample data for demonstration
@@ -30,7 +33,8 @@ Financial_Risk_Model/
 │   └── visualize.py              # Script for generating key visualizations
 ├── .gitignore                    # Specifies intentionally untracked files
 ├── requirements.txt              # Lists the project dependencies
-└── README.md                     # This documentation file
+└── README.md                     #
+
 
 ## 4. Methodology
 
