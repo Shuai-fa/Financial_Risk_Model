@@ -17,7 +17,6 @@ This project serves as a comprehensive portfolio piece demonstrating a full data
 ## 3. Project Structure
 
 The repository is organized as follows to ensure clarity and reproducibility:
-
 ```text
 Financial_Risk_Model/
 ├── data/
