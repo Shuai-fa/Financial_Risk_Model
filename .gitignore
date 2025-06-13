@@ -1,0 +1,26 @@
+# Python cache files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# OS-generated files
+.DS_Store
+.DS_Store?
+
+# Models folder - Trained models can be large and should not be in version control
+models/
+
+# Data folder - We only want to track the anonymized sample file
+# Ignore everything inside data/
+data/*
+# But make an exception for our safe sample file
+!data/sample_data.csv
+
+# Tooling files
+1_create_sample_data.py
+check_data.py
+check_headers.py
+
+# IDE-specific files
+.vscode/
