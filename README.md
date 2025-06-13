@@ -55,13 +55,15 @@ Financial_Risk_Model/
       - Assessed the model on a hold-out test set (the last \~4,400 rows of the complete dataset).
       - The **Precision-Recall (PR) Curve** was used as the primary tool for evaluation, as it is more informative than ROC-AUC for imbalanced datasets. This curve allows for selecting an optimal decision threshold that meets the business objective of minimizing false positives (high precision).
 
-## 5\. Key Results & Insights
+## 5. Key Results & Insights
 
-The feature-engineered model showed a massive performance improvement over a baseline model.
+The feature-engineered model demonstrates a significant performance improvement over a baseline model. The final Precision-Recall AUC score on the hold-out test set reached **0.70**, indicating a strong predictive capability.
 
-**(Please run `src/visualize.py` and place the generated `precision_recall_curve.png` inside the `images` folder to display it here)**
+![Precision-Recall Curve for Feature-Engineered Model](images/precision_recall_curve.png)
 
-This curve serves as a powerful decision-making tool. It allows stakeholders to choose a trade-off that fits their business needs. For example, a threshold can be selected to achieve **80% precision** (8 out of 10 flagged customers are true defaulters) while still identifying a significant portion of all actual defaulters.
+The curve above serves as a powerful decision-making tool. It allows stakeholders to choose a trade-off that fits their business needs. For example:
+- A **high-precision strategy** can be adopted by selecting a threshold that yields >80% precision, ensuring that flagged customers are almost certainly at risk, thus optimizing resource allocation for intervention.
+- A **balanced strategy** (e.g., the example point on the curve) can identify a larger portion of actual defaulters while maintaining a reasonable level of prediction accuracy.
 
 ## 6\. How to Run This Project
 
